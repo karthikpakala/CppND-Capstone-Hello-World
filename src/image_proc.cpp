@@ -1,9 +1,6 @@
-#include <opencv2/highgui.hpp>
 #include "image_proc.h"
-#include <opencv2/core/types.hpp>
 
-#include <stdio.h>
-#include <vector>
+
 
 using namespace cv;
 using namespace std;

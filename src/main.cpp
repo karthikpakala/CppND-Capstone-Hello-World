@@ -1,7 +1,7 @@
-#include "opencv2/core/utility.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
+#include <opencv2/core/utility.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
 #include <stdio.h>
 #include <vector>
 #include "data_processor.h"
@@ -22,14 +22,17 @@ using namespace std;
     the Hough lines to get a single solid line for each lane
     Draw both lane lines on original image and add Weight
 */
-int main()
-{
-    std::string image_path = samples::findFile("/home/karthik/Projects/CppND-Capstone-Hello-World/data/input.jpg");
-    cv::Mat img = imread(image_path, IMREAD_COLOR);
-    if(img.empty())
-    {
-        std::cout << "Could not read the image: " << image_path << std::endl;
-        return 1;
+
+
+int main( int argc, char** argv )
+{    // Loads an image
+    std::string imageName = "/home/karthik/Projects/CppND-Capstone-Hello-World/data/input.jpg";
+    cv::Mat img = imread( cv::samples::findFile( imageName, cv::IMREAD_COLOR )); // Load an image
+    // Check if image is loaded fine
+    if( img.empty()) {
+        printf(" Error opening image\n");
+        printf(" No image selected\n");
+        return -1;
     }
 
     while (!img.empty()){
@@ -45,9 +48,10 @@ int main()
 
         LaneDetector laneDetector;
        // vector<cv::Vec4i> finalImage = laneDetector.hough_line_transform(polygonMaskImage);
-        std::vector<cv::Vec4i> hough_lines = laneDetector.hough_line_transform(polygonMaskImage);
-
-        
+       //std::vector<cv::Vec4i> hough_lines = laneDetector.hough_line_transform(polygonMaskImage);
+       //std::vector<std::vector<cv::Vec4i> > lines = laneDetector.line_separation(hough_lines, cannyEdgeImage);
+       //std::vector<cv::Point> lane = laneDetector.least_squares(lines, gaussblurr);
+       //int laneLines = laneDetector.plotLines(gaussblurr, lane);
     }
     return 0;
 }

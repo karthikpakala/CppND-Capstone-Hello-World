@@ -1,13 +1,11 @@
-#include <iostream>
-#include <opencv2/core/utility.hpp>
 #include "data_processor.h"
 
 using namespace std;
 using namespace cv;
 //step 1: read data
 cv::Mat DataProcessor::read_image(std::string filepath){
-    string image_path = samples::findFile(filepath);
-    cv::Mat img = imread(filepath, IMREAD_COLOR);
+    string image_path = cv::samples::findFile(filepath);
+    cv::Mat img = cv::imread(filepath, IMREAD_COLOR);
     return img;
 }
 

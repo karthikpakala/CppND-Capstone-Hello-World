@@ -9,7 +9,7 @@ project(lane_line_detector)
 
 find_package(OpenCV 4.1 REQUIRED)
 
-include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRS} src)
 link_directories(${OpenCV_LIBRARY_DIRS})
 add_definitions(${OpenCV_DEFINITIONS})
 

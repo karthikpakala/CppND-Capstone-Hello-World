@@ -5,7 +5,13 @@
 #include <stdio.h>
 #include <iostream>
 #include <vector>
-#include <opencv2/core/matx.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/core/types.hpp>
+#include <opencv2/core.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/opencv.hpp>
+#include <string>
+
 
 class LaneDetector{
     public:
