@@ -1,18 +1,19 @@
-cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
-add_definitions(-std=c++11)
+cmake_minimum_required(VERSION 3.11.3)
 
-set(CXX_FLAGS "-Wall")
-set(CMAKE_CXX_FLAGS, "${CXX_FLAGS}")
-
+set(CMAKE_CXX_STANDARD 14)
 project(lane_line_detector)
+set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++14 -pthread")
 
 find_package(OpenCV 4.1 REQUIRED)
 
-include_directories(${OpenCV_INCLUDE_DIRS} src)
+include_directories(src)
+include_directories(${OpenCV_INCLUDE_DIRS})
 link_directories(${OpenCV_LIBRARY_DIRS})
 add_definitions(${OpenCV_DEFINITIONS})
 
-# Executable for create matrix exercise
-add_executable (lane_detector src/data_processor.cpp src/image_proc.cpp src/lanedetector.cpp src/main.cpp)
-target_link_libraries (lane_detector ${OpenCV_LIBRARIES})
+# Find all executables
+file(GLOB SOURCES "src/*.cpp") #src/*.h
+
+add_executable(lane_line_detector ${SOURCES})
+target_link_libraries(lane_line_detector ${OpenCV_LIBS} )

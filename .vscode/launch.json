@@ -8,7 +8,7 @@
             "name": "Lane Detector",
             "type": "cppdbg",
             "request": "launch",
-            "program": "/home/karthik/Projects/CppND-Capstone-Hello-World/build/lane_detector",
+            "program": "/home/karthik/Projects/CppND-Capstone-Hello-World/build/lane_line_detector",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -23,7 +23,8 @@
                 }
             ],
             "preLaunchTask": "C/C++: g++ build active file",
-            "miDebuggerPath": "/usr/bin/gdb"
+            "miDebuggerPath": "/usr/bin/gdb",
+            "logging": { "trace": true, "traceResponse": true }
         }
     ]
 }

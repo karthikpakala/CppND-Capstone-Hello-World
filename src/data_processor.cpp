@@ -4,8 +4,9 @@ using namespace std;
 using namespace cv;
 //step 1: read data
 cv::Mat DataProcessor::read_image(std::string filepath){
+    cv::Mat img;
     string image_path = cv::samples::findFile(filepath);
-    cv::Mat img = cv::imread(filepath, IMREAD_COLOR);
+    img = cv::imread(filepath, IMREAD_COLOR);
     return img;
 }
 

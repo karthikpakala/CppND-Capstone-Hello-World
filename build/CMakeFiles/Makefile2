@@ -72,7 +72,7 @@ CMAKE_BINARY_DIR = /home/karthik/Projects/CppND-Capstone-Hello-World/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lane_detector.dir/all
+all: CMakeFiles/lane_line_detector.dir/all
 
 .PHONY : all
 
@@ -82,36 +82,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lane_detector.dir/clean
+clean: CMakeFiles/lane_line_detector.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lane_detector.dir
+# Target rules for target CMakeFiles/lane_line_detector.dir
 
 # All Build rule for target.
-CMakeFiles/lane_detector.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target lane_detector"
-.PHONY : CMakeFiles/lane_detector.dir/all
+CMakeFiles/lane_line_detector.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target lane_line_detector"
+.PHONY : CMakeFiles/lane_line_detector.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lane_detector.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles 5
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lane_detector.dir/all
+CMakeFiles/lane_line_detector.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lane_line_detector.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles 0
-.PHONY : CMakeFiles/lane_detector.dir/rule
+.PHONY : CMakeFiles/lane_line_detector.dir/rule
 
 # Convenience name for target.
-lane_detector: CMakeFiles/lane_detector.dir/rule
+lane_line_detector: CMakeFiles/lane_line_detector.dir/rule
 
-.PHONY : lane_detector
+.PHONY : lane_line_detector
 
 # clean rule for target.
-CMakeFiles/lane_detector.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/clean
-.PHONY : CMakeFiles/lane_detector.dir/clean
+CMakeFiles/lane_line_detector.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/clean
+.PHONY : CMakeFiles/lane_line_detector.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

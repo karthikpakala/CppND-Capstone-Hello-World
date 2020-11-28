@@ -23,7 +23,6 @@ using namespace std;
     Draw both lane lines on original image and add Weight
 */
 
-
 int main( int argc, char** argv )
 {    // Loads an image
     std::string imageName = "/home/karthik/Projects/CppND-Capstone-Hello-World/data/input.jpg";
@@ -34,24 +33,33 @@ int main( int argc, char** argv )
         printf(" No image selected\n");
         return -1;
     }
-
+    //namedWindow("Display Image", WINDOW_AUTOSIZE );
+    //imshow("Display Image", img);
+    waitKey(0);
     while (!img.empty()){
+        
         DataProcessor dataProcessor;
         cv::Mat yellowwhite = dataProcessor.yellow_white_lines(img);
-        cv::Mat greyscale = dataProcessor.rgb2greyscale(yellowwhite);
-        cv::Mat gaussblurr = dataProcessor.gaussian_blur(greyscale);
-
+        namedWindow("Yellow White Image", WINDOW_AUTOSIZE );
+        imshow("Yellow White Image", yellowwhite);
+        //cv::Mat greyscale = dataProcessor.rgb2greyscale(yellowwhite);
+        //cv::Mat gaussblurr = dataProcessor.gaussian_blur(greyscale);
+        /*
         ImageProc imageProcessor;
         cv::Mat cannyEdgeImage = imageProcessor.canny_edge(gaussblurr);
         cv::Mat polygonMaskImage = imageProcessor.polygon_mask(cannyEdgeImage);
-        cv::imshow("polygon", polygonMaskImage);
-
+        namedWindow("Masked Image", WINDOW_AUTOSIZE );
+        cv::imshow("Masked Input", polygonMaskImage);
+        */
+        /*
         LaneDetector laneDetector;
-       // vector<cv::Vec4i> finalImage = laneDetector.hough_line_transform(polygonMaskImage);
-       //std::vector<cv::Vec4i> hough_lines = laneDetector.hough_line_transform(polygonMaskImage);
-       //std::vector<std::vector<cv::Vec4i> > lines = laneDetector.line_separation(hough_lines, cannyEdgeImage);
-       //std::vector<cv::Point> lane = laneDetector.least_squares(lines, gaussblurr);
-       //int laneLines = laneDetector.plotLines(gaussblurr, lane);
-    }
+        vector<cv::Vec4i> finalImage = laneDetector.hough_line_transform(polygonMaskImage);
+        std::vector<cv::Vec4i> hough_lines = laneDetector.hough_line_transform(polygonMaskImage);
+        std::vector<std::vector<cv::Vec4i> > lines = laneDetector.line_separation(hough_lines, cannyEdgeImage);
+        std::vector<cv::Point> lane = laneDetector.least_squares(lines, gaussblurr);
+        int laneLines = laneDetector.plotLines(gaussblurr, lane);
+        */
+     }
     return 0;
 }
+

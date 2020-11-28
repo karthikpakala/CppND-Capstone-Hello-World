@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lane_detector
+# Target rules for targets named lane_line_detector
 
 # Build rule for target.
-lane_detector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lane_detector
-.PHONY : lane_detector
+lane_line_detector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lane_line_detector
+.PHONY : lane_line_detector
 
 # fast build rule for target.
-lane_detector/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/build
-.PHONY : lane_detector/fast
+lane_line_detector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/build
+.PHONY : lane_line_detector/fast
 
 src/data_processor.o: src/data_processor.cpp.o
 
@@ -148,7 +148,7 @@ src/data_processor.o: src/data_processor.cpp.o
 
 # target to build an object file
 src/data_processor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/data_processor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o
 .PHONY : src/data_processor.cpp.o
 
 src/data_processor.i: src/data_processor.cpp.i
@@ -157,7 +157,7 @@ src/data_processor.i: src/data_processor.cpp.i
 
 # target to preprocess a source file
 src/data_processor.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/data_processor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.i
 .PHONY : src/data_processor.cpp.i
 
 src/data_processor.s: src/data_processor.cpp.s
@@ -166,7 +166,7 @@ src/data_processor.s: src/data_processor.cpp.s
 
 # target to generate assembly for a file
 src/data_processor.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/data_processor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.s
 .PHONY : src/data_processor.cpp.s
 
 src/image_proc.o: src/image_proc.cpp.o
@@ -175,7 +175,7 @@ src/image_proc.o: src/image_proc.cpp.o
 
 # target to build an object file
 src/image_proc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/image_proc.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o
 .PHONY : src/image_proc.cpp.o
 
 src/image_proc.i: src/image_proc.cpp.i
@@ -184,7 +184,7 @@ src/image_proc.i: src/image_proc.cpp.i
 
 # target to preprocess a source file
 src/image_proc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/image_proc.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.i
 .PHONY : src/image_proc.cpp.i
 
 src/image_proc.s: src/image_proc.cpp.s
@@ -193,7 +193,7 @@ src/image_proc.s: src/image_proc.cpp.s
 
 # target to generate assembly for a file
 src/image_proc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/image_proc.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s
 .PHONY : src/image_proc.cpp.s
 
 src/lanedetector.o: src/lanedetector.cpp.o
@@ -202,7 +202,7 @@ src/lanedetector.o: src/lanedetector.cpp.o
 
 # target to build an object file
 src/lanedetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/lanedetector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o
 .PHONY : src/lanedetector.cpp.o
 
 src/lanedetector.i: src/lanedetector.cpp.i
@@ -211,7 +211,7 @@ src/lanedetector.i: src/lanedetector.cpp.i
 
 # target to preprocess a source file
 src/lanedetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/lanedetector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.i
 .PHONY : src/lanedetector.cpp.i
 
 src/lanedetector.s: src/lanedetector.cpp.s
@@ -220,7 +220,7 @@ src/lanedetector.s: src/lanedetector.cpp.s
 
 # target to generate assembly for a file
 src/lanedetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/lanedetector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.s
 .PHONY : src/lanedetector.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -229,7 +229,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -238,7 +238,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -247,8 +247,35 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_detector.dir/build.make CMakeFiles/lane_detector.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/videoframeproc.o: src/videoframeproc.cpp.o
+
+.PHONY : src/videoframeproc.o
+
+# target to build an object file
+src/videoframeproc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o
+.PHONY : src/videoframeproc.cpp.o
+
+src/videoframeproc.i: src/videoframeproc.cpp.i
+
+.PHONY : src/videoframeproc.i
+
+# target to preprocess a source file
+src/videoframeproc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i
+.PHONY : src/videoframeproc.cpp.i
+
+src/videoframeproc.s: src/videoframeproc.cpp.s
+
+.PHONY : src/videoframeproc.s
+
+# target to generate assembly for a file
+src/videoframeproc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s
+.PHONY : src/videoframeproc.cpp.s
 
 # Help Target
 help:
@@ -258,7 +285,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lane_detector"
+	@echo "... lane_line_detector"
 	@echo "... src/data_processor.o"
 	@echo "... src/data_processor.i"
 	@echo "... src/data_processor.s"
@@ -271,6 +298,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/videoframeproc.o"
+	@echo "... src/videoframeproc.i"
+	@echo "... src/videoframeproc.s"
 .PHONY : help
 
 
