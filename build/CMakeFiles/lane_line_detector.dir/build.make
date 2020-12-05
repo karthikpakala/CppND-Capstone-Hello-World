@@ -79,73 +79,73 @@ include CMakeFiles/lane_line_detector.dir/flags.make
 CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
 CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o: ../src/data_processor.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp
 
 CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.i"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp > CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp > CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.i
 
 CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.s"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp -o CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp -o CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.s
 
 CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
 CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o: ../src/image_proc.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp
 
 CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.i"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp > CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp > CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.i
 
 CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp -o CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp -o CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s
 
-CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
-CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o: ../src/lanedetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/lanedetector.cpp
+CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
+CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o: ../src/lane_detector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.cpp
 
-CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.i"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/lanedetector.cpp > CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.i
+CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.cpp > CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.i
 
-CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.s"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/lanedetector.cpp -o CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.s
+CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.cpp -o CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.s
 
 CMakeFiles/lane_line_detector.dir/src/main.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
 CMakeFiles/lane_line_detector.dir/src/main.cpp.o: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/lane_line_detector.dir/src/main.cpp.o"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/main.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/main.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp
 
 CMakeFiles/lane_line_detector.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/main.cpp.i"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp > CMakeFiles/lane_line_detector.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp > CMakeFiles/lane_line_detector.dir/src/main.cpp.i
 
 CMakeFiles/lane_line_detector.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/main.cpp.s"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp -o CMakeFiles/lane_line_detector.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp -o CMakeFiles/lane_line_detector.dir/src/main.cpp.s
 
 CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o: CMakeFiles/lane_line_detector.dir/flags.make
 CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o: ../src/videoframeproc.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o -c /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp
 
 CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp > CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp > CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i
 
 CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s"
-	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp -o CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp -o CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s
 
 # Object files for target lane_line_detector
 lane_line_detector_OBJECTS = \
 "CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o" \
 "CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o" \
-"CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o" \
+"CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o" \
 "CMakeFiles/lane_line_detector.dir/src/main.cpp.o" \
 "CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o"
 
@@ -154,7 +154,7 @@ lane_line_detector_EXTERNAL_OBJECTS =
 
 lane_line_detector: CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o
 lane_line_detector: CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o
-lane_line_detector: CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o
+lane_line_detector: CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o
 lane_line_detector: CMakeFiles/lane_line_detector.dir/src/main.cpp.o
 lane_line_detector: CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o
 lane_line_detector: CMakeFiles/lane_line_detector.dir/build.make

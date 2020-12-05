@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/data_processor.cpp.o"
   "/home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o"
-  "/home/karthik/Projects/CppND-Capstone-Hello-World/src/lanedetector.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o"
+  "/home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o"
   "/home/karthik/Projects/CppND-Capstone-Hello-World/src/main.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/main.cpp.o"
   "/home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp" "/home/karthik/Projects/CppND-Capstone-Hello-World/build/CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o"
   )

@@ -1,5 +1,5 @@
 
-#include "lanedetector.h"
+#include "lane_detector.h"
 
 
 using namespace cv;
@@ -49,7 +49,7 @@ std::vector<std::vector<cv::Vec4i> > line_separation(std::vector<cv::Vec4i> line
             bool left_flag = true;
         }
         j++;
-        }
+    }
     output.at(0) = left_lines;
     output.at(1) = right_lines;
 

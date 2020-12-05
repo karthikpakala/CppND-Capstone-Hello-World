@@ -16,7 +16,7 @@ class ImageProc {
     cv::Mat canny_edge(cv::Mat); //canny edge detector
     cv::Mat polygon_mask(cv::Mat);
     private:
-    cv::Mat canny_output, thresh_output, kernel, mask_input;
+    cv::Mat canny_output, thresh_output, mask_input;
     cv::Point anchor; 
     //apply polygon mask to the resulting image.
 };

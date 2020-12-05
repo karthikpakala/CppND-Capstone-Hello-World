@@ -196,32 +196,32 @@ src/image_proc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.s
 .PHONY : src/image_proc.cpp.s
 
-src/lanedetector.o: src/lanedetector.cpp.o
+src/lane_detector.o: src/lane_detector.cpp.o
 
-.PHONY : src/lanedetector.o
+.PHONY : src/lane_detector.o
 
 # target to build an object file
-src/lanedetector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.o
-.PHONY : src/lanedetector.cpp.o
+src/lane_detector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o
+.PHONY : src/lane_detector.cpp.o
 
-src/lanedetector.i: src/lanedetector.cpp.i
+src/lane_detector.i: src/lane_detector.cpp.i
 
-.PHONY : src/lanedetector.i
+.PHONY : src/lane_detector.i
 
 # target to preprocess a source file
-src/lanedetector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.i
-.PHONY : src/lanedetector.cpp.i
+src/lane_detector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.i
+.PHONY : src/lane_detector.cpp.i
 
-src/lanedetector.s: src/lanedetector.cpp.s
+src/lane_detector.s: src/lane_detector.cpp.s
 
-.PHONY : src/lanedetector.s
+.PHONY : src/lane_detector.s
 
 # target to generate assembly for a file
-src/lanedetector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lanedetector.cpp.s
-.PHONY : src/lanedetector.cpp.s
+src/lane_detector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.s
+.PHONY : src/lane_detector.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -292,9 +292,9 @@ help:
 	@echo "... src/image_proc.o"
 	@echo "... src/image_proc.i"
 	@echo "... src/image_proc.s"
-	@echo "... src/lanedetector.o"
-	@echo "... src/lanedetector.i"
-	@echo "... src/lanedetector.s"
+	@echo "... src/lane_detector.o"
+	@echo "... src/lane_detector.i"
+	@echo "... src/lane_detector.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
