@@ -419,5 +419,3 @@ CMakeFiles/lane_line_detector.dir/src/main.cpp.o
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp
  /usr/local/include/opencv4/opencv2/video/tracking.hpp
  /usr/local/include/opencv4/opencv2/videoio.hpp
-CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o
- /home/karthik/Projects/CppND-Capstone-Hello-World/src/videoframeproc.cpp

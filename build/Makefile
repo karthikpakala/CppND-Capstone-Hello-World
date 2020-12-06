@@ -250,33 +250,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/videoframeproc.o: src/videoframeproc.cpp.o
-
-.PHONY : src/videoframeproc.o
-
-# target to build an object file
-src/videoframeproc.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o
-.PHONY : src/videoframeproc.cpp.o
-
-src/videoframeproc.i: src/videoframeproc.cpp.i
-
-.PHONY : src/videoframeproc.i
-
-# target to preprocess a source file
-src/videoframeproc.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.i
-.PHONY : src/videoframeproc.cpp.i
-
-src/videoframeproc.s: src/videoframeproc.cpp.s
-
-.PHONY : src/videoframeproc.s
-
-# target to generate assembly for a file
-src/videoframeproc.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lane_line_detector.dir/build.make CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.s
-.PHONY : src/videoframeproc.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -298,9 +271,6 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/videoframeproc.o"
-	@echo "... src/videoframeproc.i"
-	@echo "... src/videoframeproc.s"
 .PHONY : help
 
 

@@ -419,5 +419,3 @@ CMakeFiles/lane_line_detector.dir/src/main.cpp.o: /usr/local/include/opencv4/ope
 CMakeFiles/lane_line_detector.dir/src/main.cpp.o: /usr/local/include/opencv4/opencv2/video/tracking.hpp
 CMakeFiles/lane_line_detector.dir/src/main.cpp.o: /usr/local/include/opencv4/opencv2/videoio.hpp
 
-CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o: ../src/videoframeproc.cpp
-

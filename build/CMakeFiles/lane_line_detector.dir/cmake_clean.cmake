@@ -3,7 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/lane_line_detector.dir/src/image_proc.cpp.o"
   "CMakeFiles/lane_line_detector.dir/src/lane_detector.cpp.o"
   "CMakeFiles/lane_line_detector.dir/src/main.cpp.o"
-  "CMakeFiles/lane_line_detector.dir/src/videoframeproc.cpp.o"
   "lane_line_detector"
   "lane_line_detector.pdb"
 )
