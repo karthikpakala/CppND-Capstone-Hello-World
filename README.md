@@ -1,4 +1,4 @@
-# CPPND: Capstone Hello World Repo
+# CPPND: Capstone Lane Detector
 
 This is a starter repo for the Capstone project in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
 
@@ -17,10 +17,46 @@ In this project, you can build your own C++ application starting with this repo,
   * Linux: gcc / g++ is installed by default on most Linux distros
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
+* opencv >= 4.2
+   * The installation instructions for linux are contained within the following link:
+     https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
+   
+
+
 
 ## Basic Build Instructions
 
 1. Clone this repo.
 2. Make a build directory in the top level directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
-4. Run it: `./HelloWorld`.
+4. Run it: `./lane_line_detector
+
+
+Project Description and Structure.
+1. The project is built to detect lane lines on the road using opencv libraray.
+2. It extensively uses functions/classes from opencv library for data processing, plotting and read/write functions into image and video files.
+3. The functions primarily work with single frames one at a time, wherein each frame is processed by using different opencv methods to get the desired output.
+4. The project is structured into the following classes and coresponding .ccp/.h files under the project folder: 
+   1.  data_processor.cpp
+       This class contains all the functions that are related to data processing of thhe input data. The following are the steps involved in data processing and        
+       the corresponding functions names:
+       1. yellow_white_lanes : Extracts just the yellow and white pixels from the input image.
+       2. rb2greyscale : Converts the colored image into a greyscale image
+       3. gaussian_blurr : Applies gaussiar blurr on the resulting image from gaussian blurr above
+   2. image_proc.cpp
+       1. canny_edge : Applies the canny edge function from opencv library to extract the edges from the resulting image that is processed in the 
+          data_processor.cpp
+       2. polygon_mask : applies a polygon mask by construction a bounding box on the image to eliminate all other pixels from the image other than the lane lines 
+          that are within the region of interest.
+   3.lane_detector.cpp
+       1. hough_line_transform : Applies hough line transform on the resulting image fom image_proc.cpp whih will result in lane detection from the image. 
+       2. line_separator : Separates the detected lane lines into left and right lane lines.
+       3. least_squares : Applies least squares function on the separated lane lines to generate a fitted line on either of the separated lane lines to generate 
+          individul lane lines on each side.
+   4. main.cpp
+       main.cpp contains the instantiates all the functions sequentially to create objects that are generated out of each of the functions to pass on the object 
+       to the next function and so on to generate the outputand store it in a file at the end of the loop. 
+
+Expected behavior/output: 
+The output of the program contains lane lines being plotted on the original video. lane lines are continually updated as the video progresses showing that the program is working in a itetarive way to detect lane lines and plot them in te original video.  
+   
