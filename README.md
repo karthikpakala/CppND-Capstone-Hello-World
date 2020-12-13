@@ -60,3 +60,27 @@ Project Description and Structure.
 Expected behavior/output: 
 The output of the program contains lane lines being plotted on the original video. lane lines are continually updated as the video progresses showing that the program is working in a itetarive way to detect lane lines and plot them in te original video.  
    
+Ruberic Points : 
+1. main.cpp : 
+     1. The project reads data from a file and process the data, or the program writes data to  
+     a file. (Line 30, Line 129)
+     2. The project demonstrates an understanding of C++ functions and control structures.
+     (Line 26, 36, 49, 124)
+     3. The project accepts user input and processes the input. (Line 30, 43)
+     
+2. data_processor.cpp/data_procssor.h:
+     1. The project uses Object Oriented Programming techniques. (data_processor.h(Line 14), 
+     2. Classes use appropriate access specifiers for class members. (data_processor.h(Line 
+     15, 19))
+     3. The project makes use of references in function declarations. (data_processor.h (Line 
+     12))
+     
+3. image_proc.cpp/image_proc.h : 
+     1. The project uses Object Oriented Programming techniques. (image_proc.h (Line 14)), 
+     2. Classes use appropriate access specifiers for class members. (image_proc(Line 15, 18)
+     
+4. lane_detector.cpp/lane_detector.h : 
+     1. The project uses Object Oriented Programming techniques. (lane_detector.h(Line 16)
+     2. The project makes use of references in function declarations. (lane_detector.h (Line   
+     19, 20)
+     
