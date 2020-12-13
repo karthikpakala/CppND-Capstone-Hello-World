@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.cpp
+data_processor.h
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.h
+
 /home/karthik/Projects/CppND-Capstone-Hello-World/src/data_processor.h
 opencv2/imgproc.hpp
 -
