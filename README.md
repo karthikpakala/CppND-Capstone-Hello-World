@@ -84,3 +84,6 @@ Ruberic Points :
      2. The project makes use of references in function declarations. (lane_detector.h (Line   
      19, 20)
      
+5. Doeumentation in README.md : 
+     1. Classes abstract implementation details from their interfaces.(the function description covers the function intent and behavior. Hence this ruberic point is covered as a part of the documentation)
+     
