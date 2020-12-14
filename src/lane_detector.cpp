@@ -6,14 +6,25 @@ using namespace cv;
 using namespace std;
 
 //step 6; Perform Hough Lines transformation to get lines on the image. s
-std::vector<cv::Vec4i> hough_line_transform(Mat img_mask){
+std::vector<cv::Vec4i> LaneDetector::hough_line_transform(cv::Mat img_mask){
     vector<cv::Vec4i> lines;
-    HoughLinesP(img_mask, lines, 1, CV_PI/180, 20, 20, 30);
+    cv::Mat color_lines;
+    HoughLinesP(img_mask, lines, 2, CV_PI/180, 50, 50, 150);
+    cv::cvtColor(img_mask, color_lines, COLOR_GRAY2BGR);
 
+    for(size_t i = 0; i < lines.size(); i++)
+    {
+        line(color_lines, Point(lines[i][0], lines[i][1]),
+        Point(lines[i][2], lines[i][3]), Scalar(0,0, 255), 2, 8); 
+    }
+    namedWindow("Hough Image", WINDOW_AUTOSIZE );
+    cv::imshow("Hough Image", color_lines);
+    waitKey(10);
+    
     return lines;
 }
 //process and output lane lines
-std::vector<std::vector<cv::Vec4i> > line_separation(std::vector<cv::Vec4i> lines, cv::Mat image_edges) {
+std::vector<std::vector<cv::Vec4i> > LaneDetector::line_separation(std::vector<cv::Vec4i> lines, cv::Mat &image_edges) {
     std::vector<std::vector<cv::Vec4i> > output;
     size_t j = 0;
     cv::Point init;
@@ -50,13 +61,13 @@ std::vector<std::vector<cv::Vec4i> > line_separation(std::vector<cv::Vec4i> line
         }
         j++;
     }
-    output.at(0) = left_lines;
-    output.at(1) = right_lines;
+    output.push_back(left_lines); //failing here
+    output.push_back(right_lines);
 
     return output;
 }
-
-std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> > right_left_lines, cv::Mat inputImage) {
+//eorror with the handling of input points and line construction. Need to fix that.
+std::vector<cv::Point> LaneDetector::least_squares(std::vector<std::vector<cv::Vec4i> > right_left_lines, cv::Mat &inputImage) {
     
     std::vector<cv::Point> output(4);
     cv::Point right_init;
@@ -80,7 +91,7 @@ std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> > right_
         }
 
         if(right_pts.size() > 0) {
-            cv::fitLine(right_pts, right_line, cv::DIST_L2, 0, 0.01, 0.01);
+            cv::fitLine(right_pts, right_line, cv::DIST_L2, 0, 0.02, 0.02);
             right_m = right_line[1] / right_line[0];
             right_b = cv::Point(right_line[2], right_line[3]);
         }
@@ -90,12 +101,12 @@ std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> > right_
         for(auto j : right_left_lines.at(1)) {
             left_init = cv::Point(j[0], j[1]);
             left_final = cv::Point(j[2], j[3]);
-
+ 
             left_pts.push_back(left_init);
             left_pts.push_back(left_final);
         }
          if(left_pts.size() > 0) {
-             cv::fitLine(left_pts, left_line, cv::DIST_L2, 0, 0.01, 0.01);
+             cv::fitLine(left_pts, left_line, cv::DIST_L2, 0, 0.02, 0.02);
              left_m = left_line[1] / left_line[0];
              left_b = cv::Point(left_line[2], left_line[3]);
          }
@@ -117,21 +128,29 @@ std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> > right_
     return output;
 }
 
-int plotLines(cv::Mat inputImage, std::vector<cv::Point> lane) {
-    std::vector<cv::Point> poly_points;
+
+cv::Mat LaneDetector::plotLines(cv::Mat &inputImage, std::vector<cv::Point> lanePoint) {
+    cv::Point rightLinespt1, rightLinespt2, leftLinespt1, leftLinespt2;
     cv::Mat output;
-    poly_points.push_back(lane[2]);
-    poly_points.push_back(lane[0]);
-    poly_points.push_back(lane[1]);
-    poly_points.push_back(lane[3]);
+    
+    inputImage.copyTo(output);
+    
+    leftLinespt1 = lanePoint.at(0);
+    leftLinespt2 = lanePoint.at(1);
+    rightLinespt1 = lanePoint.at(2);
+    rightLinespt2 = lanePoint.at(3);
 
-    cv::fillConvexPoly(output,poly_points, cv::Scalar(0,0,55), cv::LINE_AA, 0);
-    cv::addWeighted(output, 0.3, inputImage, 1.0, 0.3, output, -1);
+    cv::addWeighted(output, 0.3, inputImage, 1.0 - 0.3, 0, inputImage);
 
-    cv::line(inputImage, lane[0], lane[1], cv::Scalar(0, 255, 255), 5, cv::LINE_AA);
-    cv::line(inputImage, lane[2], lane[3], cv::Scalar(0, 255, 255), 5, cv::LINE_AA);
 
-    cv::namedWindow("Lane", cv::WINDOW_AUTOSIZE);
-    cv::imshow("Lane", inputImage);
-    return 1;
+       for(size_t i = 0; i < lanePoint.size(); i++)
+    {
+        line(output, leftLinespt1, leftLinespt2, Scalar(0,0, 255), 5, 8); 
+        line(output, rightLinespt1 , rightLinespt2, Scalar(0,0, 255), 5, 8); 
+        //Right lane is not populating the vector array, so SEGFAULT in the program/// issue with the right lane line vector not populating in lane
+        //line(output, Point(rightLines[i][0], rightLines[i][1]), Point(rightLines[i][2], rightLines[i][3]), Scalar(0,0, 255), 5, 8); 
+        //line(output, Point(leftLines[i][0], leftLines[i][1]), Point(leftLines[i][2], leftLines[i][3]), Scalar(0,0, 255), 5, 8); 
+    }
+    
+    return output;
 }

@@ -16,9 +16,9 @@
 class LaneDetector{
     public:
     std::vector<cv::Vec4i>  hough_line_transform(cv::Mat);
-    std::vector<std::vector<cv::Vec4i> > line_separation(std::vector<cv::Vec4i>, cv::Mat);
-    std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> >, cv::Mat); 
-    int plotLines(cv::Mat, std::vector<cv::Point>);
+    std::vector<std::vector<cv::Vec4i> > line_separation(std::vector<cv::Vec4i>, cv::Mat &);
+    std::vector<cv::Point> least_squares(std::vector<std::vector<cv::Vec4i> >, cv::Mat &); 
+    cv::Mat plotLines(cv::Mat &, std::vector<cv::Point>);
 };
 
 #endif

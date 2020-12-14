@@ -28,6 +28,10 @@ stdio.h
 iostream
 -
 
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.cpp
+image_proc.h
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.h
+
 /home/karthik/Projects/CppND-Capstone-Hello-World/src/image_proc.h
 opencv2/opencv.hpp
 -
@@ -47,6 +51,10 @@ iostream
 -
 stdio.h
 -
+
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.cpp
+lane_detector.h
+/home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.h
 
 /home/karthik/Projects/CppND-Capstone-Hello-World/src/lane_detector.h
 opencv2/core/mat.hpp

@@ -16,5 +16,5 @@ add_definitions(${OpenCV_DEFINITIONS})
 # Find all executables
 file(GLOB SOURCES "src/*.cpp") #src/*.h
 
-add_executable(lane_line_detector ${SOURCES})
+add_executable(lane_line_detector src/data_processor.cpp src/image_proc.cpp src/lane_detector.cpp src/main.cpp)
 target_link_libraries(lane_line_detector ${OpenCV_LIBS} )

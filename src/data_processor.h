@@ -14,7 +14,7 @@
 class DataProcessor {
     public: 
     cv::Mat read_image(std::string); //read file to process it.
-    cv::Mat yellow_white_lines(cv::Mat input_image); //identify yellow and whiles areas in the images
+    cv::Mat yellow_white_lines(cv::Mat &input_image); //identify yellow and whiles areas in the images
     cv::Mat rgb2greyscale(cv::Mat); //convert the image into a greyscale image
     cv::Mat gaussian_blur(cv::Mat); //apply gaussian blurr
     private:

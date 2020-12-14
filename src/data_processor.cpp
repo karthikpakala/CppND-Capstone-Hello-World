@@ -9,7 +9,7 @@ cv::Mat DataProcessor::read_image(std::string filepath){
     return img;
 }
 //step 1: read data
-cv::Mat DataProcessor::yellow_white_lines(cv::Mat input_image){
+cv::Mat DataProcessor::yellow_white_lines(cv::Mat &input_image){
     cv::Mat converted_hls, yellow_white;
     cv::cvtColor(input_image, converted_hls, COLOR_BGR2HLS);
     cv::Scalar lower_white = cv::Scalar(0, 200, 0);
